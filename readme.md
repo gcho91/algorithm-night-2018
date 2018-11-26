@@ -57,7 +57,7 @@ const people = {
       blondeHair: .1,
       redHair: .2
         }
-    }
+    },
     Gerald: {
       eyes: {
       blueEyes: .1,
@@ -66,11 +66,11 @@ const people = {
         },
     hair: {
       blackHair: .2,
-      brownHair: .8
+      brownHair: .8,
       blondeHair: 0,
       redHair: 0
         }
-    }
+    },
     Marilyn: {
       eyes: {
       blueEyes: .6,
@@ -79,11 +79,11 @@ const people = {
         },
     hair: {
       blackHair: .9,
-      brownHair: .1
+      brownHair: .1,
       blondeHair: 0,
       redHair: 0
         }
-    }
+    },
     John: {
       eyes: {
       blueEyes: .1,
@@ -92,11 +92,11 @@ const people = {
         },
     hair: {
       blackHair: 0,
-      brownHair: .1
+      brownHair: .1,
       blondeHair: .6,
       redHair: .3
         }
-    }
+    },
     Ray: {
       eyes: {
       blueEyes: .1,
@@ -105,11 +105,11 @@ const people = {
         },
     hair: {
       blackHair: .4,
-      brownHair: .3
+      brownHair: .3,
       blondeHair: .1,
       redHair: .2
         }
-    }
+    },
     Roseanne: {
      eyes: {
       blueEyes: 0,
@@ -118,7 +118,7 @@ const people = {
         },
     hair: {
       blackHair: .5,
-      brownHair: .3
+      brownHair: .3,
       blondeHair: 0,
       redHair: .2
         }
@@ -151,5 +151,13 @@ const people = {
  Ex: [1, 2, 3] => [6, 3, 2] 
 
  ## Advanced 
+
+1. **Stock Market**
+
+Write an function makeMoney that takes in an array of stock prices and returns the best profit you could have made from one purchase and one sale. The prices in the array are in the sequence in which they were purchased and can only be sold after it was purchased.
+
+Input: makeMoney([22, 6, 5, 8, 11, 10])
+
+Output: 6 (highest profit is from 11 - 5)
 
 
