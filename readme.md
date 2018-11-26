@@ -237,11 +237,15 @@ Output: 6 (highest profit is from 11 - 5)
 
 Consider this situation. The top number of this triangle is 62. Below it are two numbers 03 and 44.
 
-We want to get to the bottom of the triangle while hitting the biggest numbers we can along the way.
-  From any number we can one of two places: either go straight down, or down one and to the right one (but NOT down and to the left).
+Let us consider the "paths" for this triangle where we traverse from the top number, 62, to any bottom number
+ while obeying this one rule:
+        From any number we can one of two places: either go straight down, or down one and to the right
+        one (but NOT down and to the left).
 
-  1. What is the maximum sum of all the numbers we could hit for this triangle?
-  2. What is the 2nd-highest sum of all the numbers we could hit?
+Let us define the "score" of a path to be the sum of all the numbers on that path.
+
+  1. What is the maximum "score" for the paths on this triangle?
+  2. What is the 2nd-highest "score" for the paths on this triangle?
 
 ```
 62
@@ -294,5 +298,4 @@ We want to get to the bottom of the triangle while hitting the biggest numbers w
 25 22 86 74 41 44 85 17 56 82 97 41 31 99 75 55 23 86 60 78 84 62 07 41 38 87 72 03 63 52 99 29 84 87 85 73 08 28 70 12 63 45 41 11 16 50 43 53
 35 12 87 47 07 16 54 66 87 39 11 51 35 33 87 00 08 91 60 56 77 84 63 18 44 76 58 12 20 28 49 77 32 32 80 07 45 71 97 40 64 86 08 77 57 04 43 38 45
 47 45 87 41 97 06 87 68 00 16 89 18 16 74 02 69 91 55 85 12 51 43 32 94 82 95 04 99 53 25 77 73 51 04 35 32 71 42 12 81 09 29 43 78 54 71 37 36 12 92
-
 ```
