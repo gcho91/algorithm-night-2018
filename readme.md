@@ -10,7 +10,13 @@ Write a function that takes in a string and returns true or false depending on w
 
 Example: input 'racecar' -> true, input 'platypus' -> false
 
-2. **Build A Triangle**
+2. **@Me**
+
+  Given an array of twitter handles, print a string that @s all the users.
+
+  ex: ['Vestwell', 'GirlDevelopIt'] -> '@Vestwell @GirlDevelopIt'
+
+3. **Build A Triangle**
 
  write a function that takes an integer, n, and prints out a triangle of base n to the console, ex:
 
@@ -30,11 +36,6 @@ Example: input 'racecar' -> true, input 'platypus' -> false
 
         ########
 
-3. **@Me**
-
-  Given an array of twitter handles, print a string that @s all the users.
-
-  ex: ['Vestwell', 'GirlDevelopIt'] -> '@Vestwell @GirlDevelopIt'
 
 4. **Calculate genetics**
 
