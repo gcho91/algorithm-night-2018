@@ -10,11 +10,15 @@ Write a function that takes in a string and returns true or false depending on w
 
 Example: input 'racecar' -> true, input 'platypus' -> false
 
+____
+
 2. **@Me**
 
   Given an array of twitter handles, print a string that @s all the users.
 
   ex: ['Vestwell', 'GirlDevelopIt'] -> '@Vestwell @GirlDevelopIt'
+
+____
 
 3. **Build A Triangle**
 
@@ -36,10 +40,11 @@ Example: input 'racecar' -> true, input 'platypus' -> false
 
         ########
 ```
+____
 
 4. **Calculate genetics**
 
- Given the following object of parents and their genetic probabilities, write a function that takes two parents and two traits, and calculates the percent chance that a child with those parents will have that trait, based on the parents' genes.
+ Given the following object of parents and their genetic probabilities, write a function that takes two parents and two traits, and calculates the percent chance that a child with those parents will have that trait, based on the parents' genes _(note: for this question we are ignoring the dominant and recessive mechanisms of true gene expression)_
 
 
 Ex: (['Amanda', 'Gerald'], ['blueEyes', 'brownHair']) -> .096% chance that their child will have both blue eyes and brown hair. 
@@ -199,7 +204,7 @@ const people = {
     }
 }
 ```
-
+____
 ## Intermediate
 
 1. **Character Repeats**
@@ -207,6 +212,7 @@ const people = {
  Write a function that takes in two parameters: a paragraph of text and a letter, and returns the number of times that letter appears in the paragraph.
 
  Ex: ('Hello, this is a sentence', 'e') -> 4
+____
 
  2. **Turn DNA into RNA**
 
@@ -214,11 +220,15 @@ const people = {
 
  Ex: 'ATTGCGATCGATT' -> 'AAUCGAUCGCAAU'
 
+____
+
  3. **Remove Duplicates**
- 
+
  Write a function that removes duplicates from an array of numbers. 
 
  Ex: [2, 4, 7, 22, 4, 2, 7] -> [2, 3, 4, 7, 22]
+
+____
 
  4. **All Except i**
  
@@ -226,6 +236,8 @@ const people = {
 ```
  Ex: [1, 2, 3] => [6, 3, 2] 
 ```
+
+____
  ## Advanced 
 
 1. **Stock Market**
@@ -236,14 +248,20 @@ Input: makeMoney([22, 6, 5, 8, 11, 10])
 
 Output: 6 (highest profit is from 11 - 5)
 
-
+____
 
 2. **Calculate pi using Monte Carlo simulation**
-Pi can be calculated using a Monte Carlo approach. Monte Carlo methods are a broad class of computational algorithms that rely on repeated random sampling to obtain numerical results. The basic idea is using randomness to solve problems that might be deterministic in principle.
+Pi can be calculated using a Monte Carlo approach.
+
+ Monte Carlo methods are a broad class of computational algorithms that rely on repeated random sampling to obtain numerical results. The basic idea is using randomness to solve problems that might be deterministic in principle.
+
+ *In essence, Monte Carlo simulations use random sampling to approximate or predict outcomes in the real world. In essence, you define a range of possible inputs, randomly choose inputs in that range, observe the outcome, lather, rinse, repeat, until your CPU catches on fire.*
 
 Hint: throw lots of darts at a dartboard. 
 
 Extra credit: use your favorite threading or distributed system toolkit to run in parallel.
+
+____
 
 3. **Road not taken**
 
