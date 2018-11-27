@@ -29,6 +29,7 @@ const isPalindrome = (str) => {
 
 ```
 </details>
+
 ____
 
 2. **@Me**
@@ -37,6 +38,28 @@ ____
 
   ex: ['Vestwell', 'GirlDevelopIt'] -> '@Vestwell @GirlDevelopIt'
 
+
+#### Solution 
+
+<details>
+  <summary><strong>Click to reveal...</strong></summary>
+    
+```javascript
+const atMe = (arr) => {
+  let newArr = []
+  arr.forEach((item) => {
+    let newString = '@'.concat(item);
+    newArr.push(newString);
+  })
+  return newArr.join(' ');
+}
+
+const atMe = (arr) => {
+  return arr.map(i =>  "@"+i).join(' ');
+}
+
+```
+</details>
 ____
 
 3. **Build A Triangle**
@@ -59,6 +82,24 @@ ____
 
         ########
 ```
+
+#### Solution 
+
+<details>
+  <summary><strong>Click to reveal...</strong></summary>
+    
+```javascript
+const makeTriangle = (n) => {
+    let pound = '';
+    for (i = 0; i < n; i++){
+        let x = pound.concat('#');
+        console.log(x)
+        pound = x;
+    };
+};
+
+```
+</details>
 ____
 
 4. **Calculate genetics**
@@ -226,6 +267,7 @@ const people = {
 }
 ```
 ____
+
 ## Intermediate
 
 1. **Character Repeats**
@@ -234,6 +276,30 @@ ____
 ```
  Ex: ('Hello, this is a sentence', 'e') -> 4
  ```
+#### Solution 
+
+<details>
+  <summary><strong>Click to reveal...</strong></summary>
+    
+```javascript
+function characterRepeats(paragraph, letter) {
+    //create an object to store your values
+    const obj = {};
+    // iterate through the paragraph and create an object with the frequency of each letter, ex {a: 1, b: 2}
+    for (let i = 0; i < paragraph.length; i++){
+      let x = paragraph[i];
+        if (obj[x]){
+            obj[x]++
+        } else {
+            obj[x] = 1;
+        }
+    }
+    //then return the value of the object at the requested letter
+    return obj[letter] > 0 ? obj[letter] : 0 
+}; 
+
+```
+</details>
 ____
 
  2. **Turn DNA into RNA**
