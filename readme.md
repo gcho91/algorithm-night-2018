@@ -206,7 +206,7 @@ const people = {
 
  Write a function that takes in two parameters: a paragraph of text and a letter, and returns the number of times that letter appears in the paragraph.
 
- Ex: ('Hello, this is a sentence', 'e') -> 3
+ Ex: ('Hello, this is a sentence', 'e') -> 4
 
  2. **Turn DNA into RNA**
 
@@ -237,14 +237,23 @@ Input: makeMoney([22, 6, 5, 8, 11, 10])
 Output: 6 (highest profit is from 11 - 5)
 
 
-2. **Road not taken**
 
-Consider this situation. The top number of this triangle is 62. Below it are two numbers 03 and 44.
+2. **Calculate pi using Monte Carlo simulation**
+Pi can be calculated using a Monte Carlo approach. Monte Carlo methods are a broad class of computational algorithms that rely on repeated random sampling to obtain numerical results. The basic idea is using randomness to solve problems that might be deterministic in principle.
+
+Hint: throw lots of darts at a dartboard. 
+
+Extra credit: use your favorite threading or distributed system toolkit to run in parallel.
+
+3. **Road not taken**
+
+Consider this situation. The top number of this triangle is 62. Below it are two numbers 03 and 44,
+below that are three numbers and so forth. 
 
 Let us consider the "paths" for this triangle where we traverse from the top number, 62, to any bottom number
  while obeying this one rule:
-        From any number we can one of two places: either go straight down, or down one and to the right
-        one (but NOT down and to the left).
+        From any number we can go one of two places: either go straight down to the number below it, or down one and to the right one (to the number diagonally bottom-right)
+         but NOT diagonally to the bottom-left.
 
 Let us define the "score" of a path to be the sum of all the numbers on that path.
 
