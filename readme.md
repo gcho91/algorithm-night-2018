@@ -1,6 +1,8 @@
 # Vestwell Whiteboarding Night
 
-Below is a list of algorithmic problems to help you prepare for your next whiteboarding interview. They are categorized by difficulty level: beginner, intermediate and advanced. Choose a challenging one to push yourself! 
+Below is a list of algorithmic problems to help you prepare for your next whiteboarding interview. They are categorized by difficulty level: beginner, intermediate and advanced. Solutions are available but we highly encourage you to give a problem all you've got before you take a peak. 
+
+Choose a challenging one to push yourself! 
 
 ## Beginner 
 
