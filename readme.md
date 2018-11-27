@@ -10,6 +10,25 @@ Write a function that takes in a string and returns true or false depending on w
 
 Example: input 'racecar' -> true, input 'platypus' -> false
 
+#### Solution 
+There are many ways to solve this problem, here is one example:
+<details>
+  <summary><strong>Click to reveal...</strong></summary>
+    
+```javascript
+const isPalindrome = (str) => {   
+ for (let i = 0; i < str.length; i++){
+    const lastIndex = str.length-1;
+
+    if (str[i] != str[lastIndex - i]) {
+        return false
+    }
+ return true;
+ };
+};
+
+```
+</details>
 ____
 
 2. **@Me**
@@ -44,7 +63,9 @@ ____
 
 4. **Calculate genetics**
 
- Given the following object of parents and their genetic probabilities, write a function that takes two parents and two traits, and calculates the percent chance that a child with those parents will have that trait, based on the parents' genes _(note: for this question we are ignoring the dominant and recessive mechanisms of true gene expression)_
+ Given the following object of parents and their genetic probabilities, write a function that takes two parents and two traits, and calculates the percent chance that a child with those parents will have that trait, based on the parents' genes 
+ 
+ _(note: for this question we are ignoring the dominant and recessive mechanisms of true gene expression)_
 
 
 Ex: (['Amanda', 'Gerald'], ['blueEyes', 'brownHair']) -> .096% chance that their child will have both blue eyes and brown hair. 
@@ -210,15 +231,18 @@ ____
 1. **Character Repeats**
 
  Write a function that takes in two parameters: a paragraph of text and a letter, and returns the number of times that letter appears in the paragraph.
-
+```
  Ex: ('Hello, this is a sentence', 'e') -> 4
+ ```
 ____
 
  2. **Turn DNA into RNA**
 
  Write a function that takes a string of DNA and turns into a string of RNA. DNA is made of up As Ts Cs and Gs. RNA is made up of As, Us, Ts and Cs. As match with Us, Ts match with As, Gs -> Cs, Cs -> Gs. DNA is also read backwards to create RNA. 
 
+```
  Ex: 'ATTGCGATCGATT' -> 'AAUCGAUCGCAAU'
+ ```
 
 ____
 
@@ -226,8 +250,9 @@ ____
 
  Write a function that removes duplicates from an array of numbers. 
 
+```
  Ex: [2, 4, 7, 22, 4, 2, 7] -> [2, 3, 4, 7, 22]
-
+```
 ____
 
  4. **All Except i**
@@ -244,10 +269,9 @@ ____
 
 Write an function makeMoney that takes in an array of stock prices and returns the best profit you could have made from one purchase and one sale. The prices in the array are in the sequence in which they were purchased and can only be sold after it was purchased.
 
-Input: makeMoney([22, 6, 5, 8, 11, 10])
-
-Output: 6 (highest profit is from 11 - 5)
-
+```
+[22, 6, 5, 8, 11, 10] -> 6 (since highest profit is from 11 - 5)
+```
 ____
 
 2. **Calculate pi using Monte Carlo simulation**
