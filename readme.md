@@ -62,6 +62,7 @@ const atMe = (arr) => {
 
 ```
 </details>
+
 ____
 
 3. **Build A Triangle**
@@ -102,6 +103,7 @@ const makeTriangle = (n) => {
 
 ```
 </details>
+
 ____
 
 4. **Calculate genetics**
@@ -302,6 +304,7 @@ function characterRepeats(paragraph, letter) {
 
 ```
 </details>
+
 ____
 
  2. **Turn DNA into RNA**
