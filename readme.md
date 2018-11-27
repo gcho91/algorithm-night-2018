@@ -96,7 +96,6 @@ const makeTriangle = (n) => {
     let pound = '';
     for (i = 0; i < n; i++){
         let x = pound.concat('#');
-        console.log(x)
         pound = x;
     };
 };
