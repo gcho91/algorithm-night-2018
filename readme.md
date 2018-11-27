@@ -19,7 +19,7 @@ Example: input 'racecar' -> true, input 'platypus' -> false
 3. **Build A Triangle**
 
  write a function that takes an integer, n, and prints out a triangle of base n to the console, ex:
-
+```
         #
 
         ##
@@ -35,7 +35,7 @@ Example: input 'racecar' -> true, input 'platypus' -> false
         #######
 
         ########
-
+```
 
 4. **Calculate genetics**
 
@@ -44,6 +44,7 @@ Example: input 'racecar' -> true, input 'platypus' -> false
 
 Ex: (['Amanda', 'Gerald'], ['blueEyes', 'brownHair']) -> .096% chance that their child will have both blue eyes and brown hair. 
 
+```
 const people = {
 
     Amanda: {
@@ -197,6 +198,8 @@ const people = {
     
     }
 }
+```
+
 ## Intermediate
 
 1. **Character Repeats**
@@ -220,9 +223,9 @@ const people = {
  4. **All Except i**
  
  Given an array of integers, create a new array with the product of all the integers except for itself. 
-
+```
  Ex: [1, 2, 3] => [6, 3, 2] 
-
+```
  ## Advanced 
 
 1. **Stock Market**
@@ -300,3 +303,5 @@ Let us define the "score" of a path to be the sum of all the numbers on that pat
 35 12 87 47 07 16 54 66 87 39 11 51 35 33 87 00 08 91 60 56 77 84 63 18 44 76 58 12 20 28 49 77 32 32 80 07 45 71 97 40 64 86 08 77 57 04 43 38 45
 47 45 87 41 97 06 87 68 00 16 89 18 16 74 02 69 91 55 85 12 51 43 32 94 82 95 04 99 53 25 77 73 51 04 35 32 71 42 12 81 09 29 43 78 54 71 37 36 12 92
 ```
+
+
