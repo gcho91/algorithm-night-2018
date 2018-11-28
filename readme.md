@@ -15,7 +15,7 @@ Example: input 'racecar' -> true, input 'platypus' -> false
 #### Solution 
 There are many ways to solve this problem, here is one example:
 <details>
-  <summary><strong>Click to display answer</strong></summary>
+  <summary><strong>Display answer</strong></summary>
     
 ```javascript
 const isPalindrome = (str) => {   
@@ -44,7 +44,7 @@ ____
 #### Solution 
 
 <details>
-  <summary><strong>Click to display answer</strong></summary>
+  <summary><strong>Display answer</strong></summary>
     
 ```javascript
 const atMe = (arr) => {
@@ -89,7 +89,7 @@ ____
 #### Solution 
 
 <details>
-  <summary><strong>Click to display answer</strong></summary>
+  <summary><strong>Display answer</strong></summary>
     
 ```javascript
 const makeTriangle = (n) => {
@@ -272,7 +272,7 @@ const people = {
 #### Solution 
 
 <details>
-  <summary><strong>Click to display answer</strong></summary>
+  <summary><strong>Display answer</strong></summary>
     
 ```javascript
 //This problem is basically about how we dig into a nested object. The key is to identify all the needed variables first. 
@@ -304,7 +304,7 @@ ____
 #### Solution 
 
 <details>
-  <summary><strong>Click to display answer</strong></summary>
+  <summary><strong>Display answer</strong></summary>
     
 ```javascript
 function characterRepeats(paragraph, letter) {
@@ -338,7 +338,7 @@ ____
 #### Solution 
 
 <details>
-  <summary><strong>Click to display answer</strong></summary>
+  <summary><strong>Display answer</strong></summary>
     
 ```javascript
 
@@ -376,7 +376,7 @@ ____
 #### Solution 
 
 <details>
-  <summary><strong>Click to display answer</strong></summary>
+  <summary><strong>Display answer</strong></summary>
     
 ```javascript
 let arr = [1, 2, 1, 2, 3, 5, 4, 5, 3, 4, 4, 4, 4];
@@ -406,7 +406,7 @@ ____
 #### Solution 
 
 <details>
-  <summary><strong>Click to display answer</strong></summary>
+  <summary><strong>Display answer</strong></summary>
     
 ```javascript
 
@@ -458,7 +458,7 @@ Write an function makeMoney that takes in an array of stock prices and returns t
 #### Solution 
 
 <details>
-  <summary><strong>Click to display answer</strong></summary>
+  <summary><strong>Display answer</strong></summary>
     
 ```javascript
 
@@ -497,7 +497,7 @@ Extra credit: use your favorite threading or distributed system toolkit to run i
 #### Solution 
 
 <details>
-  <summary><strong>Click to display answer</strong></summary>
+  <summary><strong>Display answer</strong></summary>
 
   Use the formula for the area of a circle A = πr2. Pick a random number and use the Pythagorean theorem z2 = x2 + y2 to determine if the random number is inside the radius of the circle.
 
@@ -603,7 +603,7 @@ Let us define the "score" of a path to be the sum of all the numbers on that pat
 #### Solution 
 
 <details>
-  <summary><strong>Click to display answer</strong></summary>
+  <summary><strong>Display answer</strong></summary>
     
 ```javascript
 // Question 1
