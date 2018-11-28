@@ -343,8 +343,28 @@ ____
  Write a function that removes duplicates from an array of numbers. 
 
 ```
- Ex: [2, 4, 7, 22, 4, 2, 7] -> [2, 3, 4, 7, 22]
+ Ex: [2, 4, 7, 22, 3, 4, 2, 7] -> [2, 3, 4, 7, 22]
 ```
+#### Solution 
+
+<details>
+  <summary><strong>Click to reveal...</strong></summary>
+    
+```javascript
+let arr = [1, 2, 1, 2, 3, 5, 4, 5, 3, 4, 4, 4, 4];
+//first sort the array, and then reduce the array by matching the current value against the last item in the accumulator.
+
+let result = arr.sort().reduce((accumulator, current) => {
+    const length = accumulator.length
+    if (length === 0 || accumulator[length - 1] !== current) {
+        accumulator.push(current);
+    }
+    return accumulator;
+}, []);
+console.log(result); //[1,2,3,4,5]
+
+```
+</details>
 ____
 
  4. **All Except i**
