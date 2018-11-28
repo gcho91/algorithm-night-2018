@@ -400,8 +400,48 @@ ____
 ```
  Ex: [1, 2, 3] => [6, 3, 2] 
 ```
+#### Solution 
+
+<details>
+  <summary><strong>Click to reveal...</strong></summary>
+    
+```javascript
+
+const productOfAllButSelf = (array) => {
+    const resArray = []
+    let forwardProduct = 1
+    let backwardsProduct = 1
+    for (let i = 0; i < array.length; i++) {
+        resArray[i] = forwardProduct
+        forwardProduct *= array[i]
+    }
+    for (let j = array.length - 1; j >= 0; j--) {
+        resArray[j] *= backwardsProduct
+        backwardsProduct *= array[j]
+    }
+
+    return resArray
+}
+
+// OR a bit cleaner:
+
+const productOfAllButSelf = (arr) => {
+    const fullProduct = arr.reduce((acc, current) =>  acc * current);
+    const newArr = arr.map((r) => {
+        return fullProduct/r;
+    })
+
+    return newArr
+}
+
+//bonus consideration: what will be returned when one of the numbers in the array is 0?
+
+```
+</details>
+
 
 ____
+
  ## Advanced 
 
 1. **Stock Market**
@@ -437,6 +477,7 @@ function getMaxProfit(prices) {
     return maxProfit;
 ```
 </details>
+
 ____
 
 2. **Calculate pi using Monte Carlo simulation**
@@ -520,4 +561,61 @@ Let us define the "score" of a path to be the sum of all the numbers on that pat
 47 45 87 41 97 06 87 68 00 16 89 18 16 74 02 69 91 55 85 12 51 43 32 94 82 95 04 99 53 25 77 73 51 04 35 32 71 42 12 81 09 29 43 78 54 71 37 36 12 92
 ```
 
+#### Solution 
 
+<details>
+  <summary><strong>Click to reveal...</strong></summary>
+    
+```javascript
+// Question 1
+let problem1 = function(original) {
+    const _ = require("lodash")
+    let triangle = _.cloneDeep(original)
+    let getSpot = (y, x) => {
+        return triangle[y][x] || -1
+    }
+
+    for (y = 1; y < triangle.length; y++)
+        for (x = 0; x < triangle[y].length; x++)
+            triangle[y][x] = triangle[y][x] + Math.max(getSpot(y - 1, x), getSpot(y - 1, x - 1))
+
+    console.log(Math.max.apply(this, triangle.pop()))
+}
+
+
+// Question 2
+let problem2 = function(original) {
+    const _ = require("lodash")
+    let triangle = _.cloneDeep(original)
+    let getSpot = (y, x, z) => {
+        return triangle[y][x] && parseInt(triangle[y][x][z]) || "out of bounds"
+    }
+
+    let bestTwo = (y, x) => {
+        const possibilities = [
+            triangle[y][x] + getSpot(y - 1, x, 0),
+            triangle[y][x] + getSpot(y - 1, x, 1),
+            triangle[y][x] + getSpot(y - 1, x - 1, 0),
+            triangle[y][x] + getSpot(y - 1, x - 1, 1)
+        ].filter(x => (x == parseInt(x)))
+
+        const sorted = possibilities.sort((x,y) => x - y)
+        return sorted.slice(-2)
+    }
+
+    triangle[0][0] = [triangle[0][0], "null"];
+
+    for (y = 1; y < triangle.length; y++)
+        for (x = 0; x < triangle[y].length; x++)
+            triangle[y][x] = bestTwo(y, x)
+
+    const finalRow = _.flatten(triangle.pop()).sort((a, b) => a - b)
+    const paths = finalRow.slice(-2)
+    console.log(`Best paths: ${paths[0]} and ${paths[1]}`)
+}
+
+problem1(original)
+problem2(original)
+
+```
+</details>
