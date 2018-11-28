@@ -269,6 +269,28 @@ const people = {
     }
 }
 ```
+#### Solution 
+
+<details>
+  <summary><strong>Click to reveal...</strong></summary>
+    
+```javascript
+//This problem is basically about how we dig into a nested object. The key is to identify all the needed variables first. 
+
+const calcGenetics = (parents, traits) => {
+ const parent1 = parents[0];
+ const parent2 = parents[1];
+ const type1 = traits[0].includes('Hair') ? 'hair' : 'eyes';
+ const type2 = traits[1].includes('Hair') ? 'hair' : 'eyes';
+ const trait1 = traits[0];
+ const trait2 = traits[1];
+ 
+return people[parent1][type1][trait1] * people[parent1][type2][trait2] * people[parent2][type1][trait1] * people[parent2][type2][trait2]
+}
+
+```
+</details>
+
 ____
 
 ## Intermediate
