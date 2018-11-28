@@ -335,7 +335,34 @@ ____
 ```
  Ex: 'ATTGCGATCGATT' -> 'AAUCGAUCGCAAU'
  ```
+#### Solution 
 
+<details>
+  <summary><strong>Click to reveal...</strong></summary>
+    
+```javascript
+
+const transcriptionObj = {
+  A:'U',
+  T:'A',
+  G:'C',
+  C:'G'
+};
+
+const convertToRNA = (DNA) => {
+    //convert the DNA string to an array, then reverse the array. make your conversions and then change back to a string. 
+  const reverseDNA = DNA.split("").reverse();
+
+  const RNA = reverseDNA.map((item) => {
+    return transcriptionObj[item];
+  })
+
+  return RNA.join("")
+}
+
+convertToRNA('ATTGCGATCGATT')
+```
+</details>
 ____
 
  3. **Remove Duplicates**
@@ -384,6 +411,32 @@ Write an function makeMoney that takes in an array of stock prices and returns t
 ```
 [22, 6, 5, 8, 11, 10] -> 6 (since highest profit is from 11 - 5)
 ```
+
+#### Solution 
+
+<details>
+  <summary><strong>Click to reveal...</strong></summary>
+    
+```javascript
+
+const stockPrices = [22, 10, 7, 5, 8, 11, 9]
+
+function getMaxProfit(prices) {
+    if (prices.length < 2) {
+      return 'Error: Getting a profit requires at least 2 prices'
+    }
+
+    let minPrice = stockPricesYesterday[0];
+    let maxProfit = stockPricesYesterday[1] - stockPricesYesterday[0];
+    for (let i = 1; i < prices.length; i ++) {
+      const currentPrice = stockPricesYesterday[i];
+      const potentialProfit = currentPrice - minPrice;
+      maxProfit = Math.max(maxProfit, potentialProfit);
+      minPrice = Math.min(minPrice, currentPrice);
+    }
+    return maxProfit;
+```
+</details>
 ____
 
 2. **Calculate pi using Monte Carlo simulation**
