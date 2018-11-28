@@ -363,6 +363,7 @@ const convertToRNA = (DNA) => {
 convertToRNA('ATTGCGATCGATT')
 ```
 </details>
+
 ____
 
  3. **Remove Duplicates**
@@ -392,7 +393,9 @@ console.log(result); //[1,2,3,4,5]
 
 ```
 </details>
+
 ____
+
 
  4. **All Except i**
  
